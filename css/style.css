@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins',sans-serif;
+    background-color: #f5f2f0;
+}
+main{
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-template-rows: 100vh;
+}
+.left-section{
+    background-image: url('../images/pexels-rfstudio-3819572.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none;
+    outline: 0;
+    border-radius: 2px;
+}
+.logo{
+    margin:40px 70px;
+    height: 30px;
+}
+.right-section{
+    margin:40px 70px;
+}
+.right-section .header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+.header-div{
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-top: 7px;
+}
+.header .lists{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: -3px;
+}
+.header .lists li{
+    color:#828282;
+    cursor: pointer;
+   }
+.header .lists li:hover{
+ color:#4f4f4e;
+ font-weight: 700;
+}
+.right-mid-section{
+    margin:0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.right-mid-section .heading h1{
+  font-family: 'Crimson Text', serif;
+  font-size:100px;
+}
+.heading .heading-end{
+    margin-top: -50px;
+    margin-left: 100px;
+    color:#333333;
+}
+.heading .heading-start {
+    color:#f5f2f0;
+    text-shadow: 1px 0 0 #4a4949, 0 -1px 0 #4a4949, 0 1px 0 #4a4949, -1px 0 0 #4a4949;
+}
+.sub-heading{
+    position:relative;
+}
+.sub-heading h4{
+    font-family: 'Poppins';
+    font-size:20px;
+    position: absolute;
+    top:58%;
+    left:15%;
+    font-weight: 400;
+    color:#878787;
+}
+.social-icons{
+    text-align: end;
+}
+.icons{
+    list-style-type: none;
+}
+.icons li{
+    margin:40px 0px;
+    position: relative;
+    right:10px;
+}
+.icons .list{
+    right:16px;
+}
+.icons li img{
+    height: 15px;
+    color:#333333;
+    cursor: pointer;
+}
+.button-section{
+    float:right;
+    margin-top: -25px;
+}
+.button-section .button{
+    padding:15px 50px;
+    font-size:14px;
+    font-family: 'Poppins';
+    outline:none;
+    border:none;
+    background-color: #333333;
+    color:#f5f2f0;
+    cursor: pointer;
+}
+.button-section .button:hover{
+    background-color: #000;
+}
+.lower-section{
+    margin:50px 0px;
+    display: grid;
+    grid-template-columns: 200px 1fr 150px;
+    column-gap: 20px;
+}
+.list-section .list{
+    list-style-type: none;
+    cursor: pointer;
+    margin:0;
+    font-family: 'Poppins';
+    font-size:14px;
+}
+.list-section .list .fa-circle{
+    margin-right: 20px;
+    font-size:12px;
+}
+.list-section .list{
+    color:#848484;
+}
+.list-section .list:hover{
+    color:#333333;
+    font-weight: 700;
+}
+.list-section .lists .line{
+ width: 2px;
+ height: 45px;
+ background-color: #000;
+ margin:-8px 0px -8px 5px;
+}
+.image-section .fa-quote-right{
+    font-size:40px;
+    color:#333333;
+}
+.image-section p{
+    font-family: 'Poppins';
+    margin:10px 0px;
+    font-size:13px;
+    font-weight: 700;
+    color:#020202;
+}
+.lower-section .lower-image{
+    height: 150px;
+    background-image: url('../images/dance-women.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border:none;
+    outline: 0;
+    border-radius: 2px;
+}
+.arrow-down{
+    text-align: end;
+    margin-top: 105px;
+}
+.fa-arrow-down-long{
+    font-size:120px;
+    font-weight: 700;
+    color:#525252;
+    cursor: pointer;
+}
