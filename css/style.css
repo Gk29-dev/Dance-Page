@@ -9,26 +9,36 @@ body{
     font-family: 'Poppins',sans-serif;
     background-color: #f5f2f0;
 }
+header{
+    display: grid;
+    grid-template-columns: 450px 1fr 1fr;
+    padding:40px 70px;
+
+}
 main{
     display: grid;
     grid-template-columns: 500px auto;
     grid-template-rows: 100vh;
+    margin-top: -60px;
 }
-.left-section{
-    background-image: url('../images/pexels-rfstudio-3819572.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.left-section img{
+    width: 500px;
+    position: absolute;
+    top:0px;
+    z-index: -1;
+    height: 100vh;
     border:none;
     outline: 0;
     border-radius: 2px;
 }
+.logo-img{
+    flex-grow: 1;
+}
 .logo{
-    margin:40px 70px;
     height: 30px;
 }
 .right-section{
-    margin:40px 70px;
+    margin:0px 70px;
 }
 .right-section .header{
     display: grid;
@@ -36,7 +46,7 @@ main{
     column-gap: 50px;
 }
 .header-div{
-    width: 100%;
+    margin-right: 30px;
     height: 2px;
     background-color: #333333;
     margin-top: 7px;
@@ -56,6 +66,9 @@ main{
 .header .lists li:hover{
  color:#4f4f4e;
  font-weight: 700;
+}
+.hamburger{
+    display: none;
 }
 .right-mid-section{
     margin:0px;
@@ -183,4 +196,98 @@ main{
     font-weight: 700;
     color:#525252;
     cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px;
+    }
+    .logo{
+        height: 40px;
+    }
+    .header-div, .header .lists{
+      display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger i{
+        font-size: 35px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .left-section img{
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+    .right-section{
+        margin:0px 30px;
+    }
+    .right-mid-section {
+        grid-template-columns: 1fr;
+    }
+    .sub-heading h4{
+        position:static;
+        text-align: center;
+        font-size:30px;
+        margin-top: 20px;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin:60px 0px;
+    }
+    .icons li{
+     position: static;
+     margin:0px;
+    }
+    .icons li img{
+        height: 25px;
+    }
+    .button-section{
+        width: 100%;
+        margin:25px auto;
+    }
+    .button-section .button{
+        display: block;
+        margin: 0px auto;
+    }
+    .lower-section{
+        margin-top: 150px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-section{
+        margin-top: 70px;
+        order:10;
+    }
+    .list-section .list{
+        font-size:20px;
+    }
+    .list-section .list .fa-circle{
+        font-size:20px;
+    }
+    .list-section .lists .line {
+        margin: -8px 0px -8px 9px;
+    }
+    .image-section p{
+        font-size:18px;
+        font-weight: normal;
+    }
+    .arrow-down{
+        margin-top: 0px;
+        margin-bottom: 70px;
+        order:-1;
+    }
 }
