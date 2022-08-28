@@ -5,7 +5,7 @@
 
 </br>
 
-![mobile_responsive](https://img.shields.io/badge/Mobile%20Responsive-No-yellowgreen)
+![mobile_responsive](https://img.shields.io/badge/Mobile%20Responsive-Yes-yellowgreen)
 
 ![time_taken](https://img.shields.io/badge/Time%20Taken-8--9%20hours-red)
 
